@@ -1,0 +1,5 @@
+<map id="HydroPEDstructure" name="HydroPEDstructure">
+<area shape="rect" id="node1" href="\ref mechanics" title="Mechanics" alt="" coords="5,45,107,93"/>
+<area shape="rect" id="node2" href="\ref hydrology" title="Hydrology" alt="" coords="201,5,300,53"/>
+<area shape="rect" id="node3" href="\ref heat" title="Heat" alt="" coords="533,45,605,93"/>
+</map>

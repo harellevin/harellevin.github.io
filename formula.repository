@@ -1,0 +1,63 @@
+\form#0:\[ \frac{d\alpha_D}{dt}= \begin{cases} C_dI_2\left(\xi-\xi_0\right) & \quad \text{for } \xi>\xi_0 \ C_1\exp\left(\frac{\alpha_D}{C_2}\right)I_2\left(\xi-\xi_0\right) & \quad \text{for } \xi<\xi_0 \end{cases} \]
+\form#1:$\nabla\cdot\left(\frac{\underline{\mathbf{k}}\left(\alpha_D\right)}{\mu_f}\left(\nabla p+\rho g \mathbf{z}\right)\right)=S_\varepsilon\frac{\partial p}{\partial t}+\alpha_B\frac{\partial\varepsilon_{kk}}{\partial t}$
+\form#2:\[ \begin{split} \lambda=\text{const.}\ \mu=\mu_0+\gamma_r\xi_0\alpha_D\ \gamma=\gamma_r\alpha_D \end{split} \]
+\form#3:$\sigma_{ij}=\left(\lambda I_1-\gamma\sqrt{I_2}\right)\delta_{ij}+\left(2\mu-\gamma\frac{I_1}{\sqrt{I_2}}\right)\varepsilon_{ij}- \alpha_B p\delta_{ij}$
+\form#4:$F_i=\sum\limits_{faces}{\frac{1}{3}\sigma_{ij}n_j+mg_i}$
+\form#5:$\frac{\partial{v_i}}{\partial{t}}=\frac{F_i}{m}$
+\form#6:$V_i^{(n)}(t+\Delta t)=V_i^{(n)}(t)+\left[F_i^{(n)}-\chi\left|F_i^{(n)}\right|{sign}\left(V_i^{(n)}\right)\right]\frac{\Delta t}{m_{inert}}$
+\form#7:$\Delta\varepsilon_{ij}=\Delta t \cdot \sum\limits_{k=1}^4{\left(V_I^{(k)}\frac{\partial L_k}{\partial x_j}+V_j^{(k)}\frac{\partial L_k}{\partial x_i}\right)}$
+\form#8:$ V=\frac{1}{6}\text{det} \begin{vmatrix} 1 & x_i & y_i & z_i \\ 1 & x_j & y_j & z_j \\ 1 & x_m & y_m & z_m \\ 1 & x_n & y_n & z_n \end{vmatrix}$
+\form#9:$m=\rho \cdot V$
+\form#10:$\left(S+\Theta H \Delta t\right)p_{n+1}=L^T\Delta u+\left[S-\left(1-\Theta\right)H\Delta t\right]p_n+F\Delta t$
+\form#11:$\mathbf{S}=\int\limits_\Omega N^TS_\varepsilon N \, d\Omega$
+\form#12:$\mathbf{H}=\int\limits_\Omega B^T\frac{\underline{\mathbf{k}}}{\mu}B \, d\Omega$
+\form#13:$\mathbf{L}^T=\int\limits_\Omega N^T\alpha_BB \, d\Omega$
+\form#14:$\mathbf{F}=-\int\limits_\Gamma N^Tq \, d\Gamma - \int\limits_\Omega B^T\frac{k}{\mu}B\rho g\nabla z \, d\Omega$
+\form#15:$\Theta\in[0,1]$
+\form#16:$N^T=\text{transpose of shape functions}$
+\form#17:$B^T=\text{transpose of shape functions derivatives}$
+\form#18:$L_k=a_k+b_kx_1+c_kx_2+d_kx_3$
+\form#19:$V=\frac{1}{6}\text{det} \begin{vmatrix} 1 & x_i & y_i & z_i \ 1 & x_j & y_j & z_j \ 1 & x_m & y_m & z_m \ 1 & x_n & y_n & z_n \end{vmatrix}$
+\form#20:$k$
+\form#21:$v_f$
+\form#22:$\rho$
+\form#23:$\mu$
+\form#24:$\Delta \rho$
+\form#25:$n+1$
+\form#26:$\lVert \rho_{n+1} - \rho_{n} \rVert \leq \Delta \rho $
+\form#27:$\frac{\sum F} {max{\left|F\right|}}$
+\form#28:$F$
+\form#29:$\vec{F}$
+\form#30:$demf \in \left[0,1\right]$
+\form#31:$\vec{F}^*=\vec{F}-demf\cdot \vec{F}$
+\form#32:$v^+=v^-+\frac{\vec{F}^*}{m}\cdot \Delta t$
+\form#33:$l$
+\form#34:$\Delta l$
+\form#35:$\varepsilon = \frac{\Delta l}{l}$
+\form#36:\[ \begin{bmatrix} \varepsilon_{xx} & \varepsilon_{xy} & \varepsilon_{xz} \\ \varepsilon_{yx} & \varepsilon_{yy} & \varepsilon_{yz} \\ \varepsilon_{dx} & \varepsilon_{dy} & \varepsilon_{dz} \end{bmatrix} = \begin{bmatrix} \frac{\partial{u_x}}{\partial{x}} & \frac{1}{2}\left(\frac{\partial{u_x}}{\partial{y}} + \frac{\partial{u_y}}{\partial{x}}\right) & \frac{1}{2}\left(\frac{\partial{u_x}}{\partial{z}} + \frac{\partial{u_z}}{\partial{x}}\right) \\ \frac{1}{2}\left(\frac{\partial{u_y}}{\partial{x}} + \frac{\partial{u_x}}{\partial{y}}\right) & \frac{\partial{u_y}}{\partial{y}} & \frac{1}{2}\left(\frac{\partial{u_y}}{\partial{z}} + \frac{\partial{u_z}}{\partial{y}}\right) \\ \frac{1}{2}\left(\frac{\partial{u_z}}{\partial{x}} + \frac{\partial{u_x}}{\partial{z}}\right) & \frac{1}{2}\left(\frac{\partial{u_z}}{\partial{y}} + \frac{\partial{u_y}}{\partial{z}}\right) & \frac{\partial{u_z}}{\partial{z}} \end{bmatrix} \]
+\form#37:$F=k\cdot \varepsilon$
+\form#38:$\Phi$
+\form#39:$\sigma=\Phi(\varepsilon)$
+\form#40:$\alpha \in [0,1] $
+\form#41:$\alpha=0$
+\form#42:$\alpha=1$
+\form#43:$\sigma=\Phi \left(\varepsilon, \alpha \right) $
+\form#44:$\vec{n}=\begin{pmatrix}n_x & n_y & n_z\end{pmatrix}$
+\form#45:\[\begin{bmatrix} F_1 \\ F_2 \\ F_3 \end{bmatrix}=\begin{bmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{bmatrix}\begin{bmatrix}n_x \\ n_y \\ n_z \end{bmatrix}\]
+\form#46:$\varepsilon_{total}=\varepsilon_{plastic}+\varepsilon_{elastic}$
+\form#47:\[S_\varepsilon\frac{\partial{p}}{\partial{t}}=\nabla\frac{k}{\mu}\nabla p+\alpha_B \frac{\partial{\varepsilon}}{\partial{t}}\]
+\form#48:$\vec{x}$
+\form#49:$k\times\vec{x}=\vec{F}$
+\form#50:$k_i$
+\form#51:$\vec{F_i}$
+\form#52:$i$
+\form#53:$4\time4$
+\form#54:$FLUX=K_p\nabla P$
+\form#55:$ FLUX=K_T\nabla T+advection$
+\form#56:\[ \rho c_P \frac{\partial{T}}{\partial{t}}=\nabla \left(K_T \nabla T \right) + v_i \nabla T \]
+\form#57:$c_P$
+\form#58:$K_T$
+\form#59:\[ \frac{\partial{P}}{\partial{t}}=\nabla\left(\frac{K_P}{\mu}\nabla P \right)+ \left(M\frac{\partial{V}}{\partial{t}}\right)\]
+\form#60:$V$
+\form#61:$P$
+\form#62:$K_P$
