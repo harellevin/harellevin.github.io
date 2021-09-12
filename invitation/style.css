@@ -1,0 +1,177 @@
+body {
+  background: #222;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.active-invitation {
+	background: #CFB590;
+	color: #564334;
+}
+
+#parallax-container {
+  /*background-color: white;*/
+  position: relative;
+  /*overflow: hidden;*/
+  width: 100%;
+  height: 90%;
+  bottom: 0%;
+  left: 0%;
+  transform: translate(-1%, 2%);
+  backface-visibility: hidden;
+}
+
+#parallax-placeholder {
+  /*background-color: white;*/
+  border: 1px solid #758918;
+  position: relative;
+  /*overflow: hidden;*/
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  backface-visibility: hidden;
+  color: white;
+	font-family: arial;
+	font-size: xxx-large;
+	text-align: center;
+	padding-top: 50%;
+}
+
+#invitation {
+  /*background-color: white;*/
+  border: 1px solid #758918;
+  position: relative;
+  /*overflow: hidden;*/
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  backface-visibility: hidden;
+	font-family: arial;
+	font-size: large;
+	text-align: center;
+}
+
+.parallax-wrapper {
+  /*background: white;*/
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 50%;
+  transform: translate3d(0px, 0px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.parallax-layer {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  display: block;
+  /*transition: transform .1s linear;*/
+}
+
+
+.figure-back {
+  background: url('images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.figure1 {
+  background: url('images/gazelle-1.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  width: 40%;
+  height: 40%;
+  bottom: 30%;
+  right: 5%;
+}
+
+.figure2 {
+  background: url('images/gazelle-2.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  width: 40%;
+  height: 60%;
+  bottom: 35%;
+  left: 8%;
+}
+
+.picture {
+  background: url('images/picnic.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 50%;
+  height: 50%;
+  bottom: 3%;
+  left: 15%;  
+}
+
+@keyframes example {
+  0%   {transform: rotate(40deg) scale(0.5);}
+  100% {transform: rotate(0deg) scale(1);}
+}
+
+
+.heart {
+  background: url('images/heart.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+.heart1 {
+  width: 10%;
+  height: 10%;
+  bottom: 55%;
+  left: 35%;  
+}
+
+.heart2 {
+  width: 12%;
+  height: 12%;
+  bottom: 65%;
+  left: 30%;  
+}
+.heart3 {
+  width: 15%;
+  height: 15%;
+  bottom: 75%;
+  left: 35%;  
+}
+
+.rotate-img {
+  background: url('images/rotate.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height: 320px;
+  right: 50%;
+}
+
+.parallax-layer.is-out {
+  transform: translate3d(0, 0, 0) !important;
+  transition: transform .4s ease-out;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
